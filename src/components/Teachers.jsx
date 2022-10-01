@@ -6,6 +6,16 @@ import Data from '../data/data';
 import TecData from './TecData';
 
 const Teachers = () => {
+    const slideLeft = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft - 500;
+    };
+
+    const slideRight = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft = slider.scrollLeft + 500;
+    };
+
   return (
     <>
         <div className='w-[100%] h-[500px]'>
@@ -18,8 +28,8 @@ const Teachers = () => {
                         </div>
                     </div>
                     <div className='w-[10%] h-[60%] flex items-center cursor-pointer'>
-                        <BsArrowLeft className='w-[45%] h-[90%] border border-[#E3E2E1] text-[#929292]' />
-                        <BsArrowRight className='w-[45%] h-[90%] border border-[#E3E2E1] text-[#FA5E01] hover:text-[#929292]' />
+                        <BsArrowLeft onClick={slideLeft} className='w-[45%] h-[90%] border border-[#E3E2E1] text-[#929292]' />
+                        <BsArrowRight onClick={slideRight} className='w-[45%] h-[90%] border border-[#E3E2E1] text-[#FA5E01] hover:text-[#929292]' />
                     </div>
                 </div>
                 <div className='w-[100%] h-[65%] flex'>

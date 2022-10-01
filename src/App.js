@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Logo from "./components/Logo";
 import Navbar from "./components/Navbar";
 import Teachers from "./components/Teachers";
+import Footer from '../src/components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <About />
       <Teachers />
+      <Footer />
       <Logo />
     </div>
   );

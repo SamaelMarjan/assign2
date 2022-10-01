@@ -12,8 +12,8 @@ const Home = () => {
     <>
     <div id='home'>
 
-        <div className='relative w-[100%] h-[550px] bg-red-200'>
-            <img src={Img} alt='img'/>
+        <div className='relative w-[100%] h-[650px]'>
+            <img src={Img} alt='img' className='w-[100%] h-[100%] object-cover'/>
         </div>
 
         <div className='w-[100%] h-[270px] flex'>
@@ -95,7 +95,7 @@ const Home = () => {
 
             <div className='flex'>
 
-                <div className='w-[60%] h-[100%] flex flex-col gap-5'>
+                <div className='w-[60%] h-[100%] flex flex-col gap-10'>
                     <p className='text-7xl text-[#fff] font-bold'>Offering Bright Futures</p>
                     <p className='text-2xl text-[#fff] font-semibold'>iNiLabs School gradutes are styding in the world’s most prestigious universities.</p>
                     <p className='bg-[#FA5E01] w-[200px] h-[50px] flex items-center justify-center text-[#fff] hover:bg-transparent hover:border hover:border-[#FA5E01]'>Apply Now</p>
